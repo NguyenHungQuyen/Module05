@@ -1,5 +1,6 @@
 @model IEnumerable<Category>
 
+<a href="/category/add">Add</a>
 <table>
     <thead>
         <tr>
@@ -10,14 +11,14 @@
     </thead>
     <tbody>
         @foreach(var item in Model){
-            <tr>
-                <td>@item.CategoryId</td>
-                <td>@item.CategoryName</td>
-                <td>
-                    <a href="/category/edit/@item.CategoryId">Edit</a>
-                    <a href="/category/delete/@item.CategoryId">Delete</a>
-                </td>
-            </tr>
+        <tr>
+            <td>@item.CategoryId</td>
+            <td>@item.CategoryName</td>
+            <td>
+                <a href="/category/edit/@item.CategoryId">Edit</a>
+                <a href="/category/delete/@item.CategoryId">Delete</a>
+            </td>
+        </tr>
         }
     </tbody>
 </table>

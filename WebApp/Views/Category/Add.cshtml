@@ -1,0 +1,14 @@
+@model Category
+
+<div asp-validation-summary="All"></div>
+<form method="post">
+    <div>
+        <label asp-for="CategoryName">Name</label>
+        <div>
+            <input type="text" asp-for="CategoryName">
+        </div>
+    </div>
+    <div>
+        <button>Save Changes</button>
+    </div>
+</form>
