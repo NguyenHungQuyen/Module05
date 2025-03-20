@@ -1,16 +1,20 @@
 {
   "Files": [
     {
-      "Id": "D:\\Module05\\WebApi\\wwwroot\\images\\3k0jk6tdvf3oak0zwdxyyhfhu22n.txt",
-      "PackagePath": "staticwebassets\\images\\3k0jk6tdvf3oak0zwdxyyhfhu22n.txt"
+      "Id": "D:\\Module05\\WebApi\\wwwroot\\images\\si6hyqpfxwigkokbyzo9d545uie4.png",
+      "PackagePath": "staticwebassets\\images\\si6hyqpfxwigkokbyzo9d545uie4.png"
     },
     {
-      "Id": "D:\\Module05\\WebApi\\wwwroot\\images\\acxyhrpi1uucc011bjf4ag1ktmn8.txt",
-      "PackagePath": "staticwebassets\\images\\acxyhrpi1uucc011bjf4ag1ktmn8.txt"
+      "Id": "D:\\Module05\\WebApi\\wwwroot\\images\\u2yuancwrwnb6rird6pg15550q68.png",
+      "PackagePath": "staticwebassets\\images\\u2yuancwrwnb6rird6pg15550q68.png"
     },
     {
-      "Id": "D:\\Module05\\WebApi\\wwwroot\\images\\v4q7nbidr9n3mbpa96iz6qb9w6l8.png",
-      "PackagePath": "staticwebassets\\images\\v4q7nbidr9n3mbpa96iz6qb9w6l8.png"
+      "Id": "D:\\Module05\\WebApi\\wwwroot\\images\\u7mqxu0hwfkvwjbdg793h0merw3c.png",
+      "PackagePath": "staticwebassets\\images\\u7mqxu0hwfkvwjbdg793h0merw3c.png"
+    },
+    {
+      "Id": "D:\\Module05\\WebApi\\wwwroot\\images\\z366dgmims3z7hafmqtkncdyf19a.png",
+      "PackagePath": "staticwebassets\\images\\z366dgmims3z7hafmqtkncdyf19a.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",

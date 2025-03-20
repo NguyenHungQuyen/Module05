@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "85cjZ6gDKCJIcEY0lQdtxRhaYnGlwzdDE+pvSbbGik0=",
+  "Hash": "jtp6ifi9shSBSl8DNaOTT9+3IGx6ryLcaf+u7602Y08=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
@@ -17,12 +17,12 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\3k0jk6tdvf3oak0zwdxyyhfhu22n.txt",
+      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\si6hyqpfxwigkokbyzo9d545uie4.png",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
-      "RelativePath": "images/3k0jk6tdvf3oak0zwdxyyhfhu22n.txt",
+      "RelativePath": "images/si6hyqpfxwigkokbyzo9d545uie4.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -33,15 +33,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\3k0jk6tdvf3oak0zwdxyyhfhu22n.txt"
+      "OriginalItemSpec": "wwwroot\\images\\si6hyqpfxwigkokbyzo9d545uie4.png"
     },
     {
-      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\acxyhrpi1uucc011bjf4ag1ktmn8.txt",
+      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\u2yuancwrwnb6rird6pg15550q68.png",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
-      "RelativePath": "images/acxyhrpi1uucc011bjf4ag1ktmn8.txt",
+      "RelativePath": "images/u2yuancwrwnb6rird6pg15550q68.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -52,15 +52,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\acxyhrpi1uucc011bjf4ag1ktmn8.txt"
+      "OriginalItemSpec": "wwwroot\\images\\u2yuancwrwnb6rird6pg15550q68.png"
     },
     {
-      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\v4q7nbidr9n3mbpa96iz6qb9w6l8.png",
+      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\u7mqxu0hwfkvwjbdg793h0merw3c.png",
       "SourceId": "WebApi",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
       "BasePath": "_content/WebApi",
-      "RelativePath": "images/v4q7nbidr9n3mbpa96iz6qb9w6l8.png",
+      "RelativePath": "images/u7mqxu0hwfkvwjbdg793h0merw3c.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -71,7 +71,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\v4q7nbidr9n3mbpa96iz6qb9w6l8.png"
+      "OriginalItemSpec": "wwwroot\\images\\u7mqxu0hwfkvwjbdg793h0merw3c.png"
+    },
+    {
+      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\z366dgmims3z7hafmqtkncdyf19a.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/z366dgmims3z7hafmqtkncdyf19a.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\z366dgmims3z7hafmqtkncdyf19a.png"
     }
   ]
 }

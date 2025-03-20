@@ -9,4 +9,8 @@ public class SiteProvider : BaseProvider
     CategoryRepository? category;
 
     public CategoryRepository Category => category ??= new CategoryRepository(Connection);
+
+     ProductRepository? product;
+
+    public ProductRepository Product => product ??= new ProductRepository(Connection);
 }
