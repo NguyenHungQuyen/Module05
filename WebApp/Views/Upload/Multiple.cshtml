@@ -1,0 +1,18 @@
+@model List<string>
+
+@inject IConfiguration config;
+
+@if (Model != null)
+{
+    foreach (var item in Model)
+    {
+        <img src="@config["ApiUrl"]/images/@item">
+    }
+}
+
+<a href="/upload">Back</a>
+
+<form enctype="multipart/form-data" method="post">
+    <input multiple type="file" name="af" accept="image/*">
+    <button>Upload</button>
+</form>
