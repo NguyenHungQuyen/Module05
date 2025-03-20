@@ -72,3 +72,4 @@ D:\Module05\WebApi\obj\Debug\net8.0\refint\WebApi.dll
 D:\Module05\WebApi\obj\Debug\net8.0\WebApi.pdb
 D:\Module05\WebApi\obj\Debug\net8.0\WebApi.genruntimeconfig.cache
 D:\Module05\WebApi\obj\Debug\net8.0\ref\WebApi.dll
+D:\Module05\WebApi\bin\Debug\net8.0\WebApi.staticwebassets.runtime.json

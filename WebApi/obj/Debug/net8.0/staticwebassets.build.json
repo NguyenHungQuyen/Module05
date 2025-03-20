@@ -1,11 +1,77 @@
 {
   "Version": 1,
-  "Hash": "lAVsf4/XP8OL4a3UKcpKodesbBfBaGYqErDYy8hI7Xs=",
+  "Hash": "85cjZ6gDKCJIcEY0lQdtxRhaYnGlwzdDE+pvSbbGik0=",
   "Source": "WebApi",
   "BasePath": "_content/WebApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "WebApi\\wwwroot",
+      "Source": "WebApi",
+      "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\3k0jk6tdvf3oak0zwdxyyhfhu22n.txt",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/3k0jk6tdvf3oak0zwdxyyhfhu22n.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\3k0jk6tdvf3oak0zwdxyyhfhu22n.txt"
+    },
+    {
+      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\acxyhrpi1uucc011bjf4ag1ktmn8.txt",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/acxyhrpi1uucc011bjf4ag1ktmn8.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\acxyhrpi1uucc011bjf4ag1ktmn8.txt"
+    },
+    {
+      "Identity": "D:\\Module05\\WebApi\\wwwroot\\images\\v4q7nbidr9n3mbpa96iz6qb9w6l8.png",
+      "SourceId": "WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Module05\\WebApi\\wwwroot\\",
+      "BasePath": "_content/WebApi",
+      "RelativePath": "images/v4q7nbidr9n3mbpa96iz6qb9w6l8.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\v4q7nbidr9n3mbpa96iz6qb9w6l8.png"
+    }
+  ]
 }
