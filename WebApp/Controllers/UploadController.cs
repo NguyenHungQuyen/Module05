@@ -32,4 +32,36 @@ namespace WebApp.Controllers
             }
             return View();
         }
+
+
+        public IActionResult Multiple() => View();
+
+        [HttpPost]
+        public async Task<IActionResult> Multiple(IFormFile[] af)
+        {
+            if (af is null)
+            {
+                return View();
+            }
+
+            Uri uri = new Uri(configuration["ApiUrl"] ?? throw new Exception("Not found ApiUrl"));
+            using (HttpClient client = new HttpClient { BaseAddress = uri })
+            {
+                MultipartFormDataContent content = new MultipartFormDataContent();
+                foreach (IFormFile f in af)
+                {
+                    content.Add(new StreamContent(f.OpenReadStream()), "af", f.FileName);
+                }
+
+                HttpResponseMessage message = await client.PostAsync("/api/upload/multiple", content);
+                if (message.IsSuccessStatusCode)
+                {
+                    return View(await message.Content.ReadFromJsonAsync<List<string>>());
+                }
+            }
+            
+            return View();
+        }
+
+
     }
