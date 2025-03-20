@@ -1,0 +1,11 @@
+@inject IConfiguration config;
+
+@if (!string.IsNullOrEmpty(Model))
+{
+    <img src="@config["ApiUrl"]/images/@Model">
+}
+
+<form enctype="multipart/form-data" method="post">
+    <input type="file" name="f" accept="image/*">
+    <button>Upload</button>
+</form>
