@@ -61,3 +61,18 @@ VALUES
 (3, 'Razer Kraken V3', '30.jpg', 'RGB gaming headset with 50mm drivers, THX Spatial Audio, and cooling gel-infused ear cushions.', 119.99, 55, 'piece');
 
 GO
+CREATE PROC AddProduct(
+    @ProductId INT,
+    @CategoryId SMALLINT,
+    @ProductName NVARCHAR(64),
+    @Description NVARCHAR(1024),
+    @Quantity SMALLINT,
+    @Price DECIMAL(10, 2),
+    @ImageUrl CHAR(32),
+    @Unit NVARCHAR(32)
+)
+AS
+INSERT INTO Product(CategoryId, ProductName, Description, Quantity, Price, ImageUrl, Unit) 
+VALUES (@CategoryId, @ProductName, @Description, @Quantity, @Price, @ImageUrl, @Unit);
+GO
+
