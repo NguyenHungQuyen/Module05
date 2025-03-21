@@ -14,5 +14,5 @@ public class SiteProvider
     public CategoryRepository Category => category ??= new CategoryRepository(configuration);
     ProductRepository? product;
 
-    public ProductRepository Product => product ??= new ProductRepository(Connection);
+    public ProductRepository Product => product ??= new ProductRepository(configuration);
 }
