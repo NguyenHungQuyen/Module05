@@ -17,6 +17,6 @@ public class ProductRepository : BaseRepository
 
     public int Add(Product obj)
     {
-        return connection.Execute("INSERT INTO Product(ProductName, Description, Quantity, Price, ImageUrl) VALUES (@ProductName, @Description, @Quantity, @Price, @ImageUrl)",obj);
+       return connection.Execute("AddProduct", obj, commandType: CommandType.StoredProcedure);
     }
 }
