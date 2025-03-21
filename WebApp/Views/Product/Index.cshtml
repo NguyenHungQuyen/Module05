@@ -1,0 +1,38 @@
+@inject IConfiguration config
+@model IEnumerable<Product>
+
+<a href="/product/add">Add</a>
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Category</th>
+            <th>Name</th>
+            <th>Quantity</th>
+            <th>Price</th>
+            <th>Image</th>
+            <th>Unit</th>
+            <th>Command</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.ProductId</td>
+                <td>@item.CategoryId</td>
+                <td>@item.ProductName</td>
+                <td>@item.Quantity</td>
+                <td>@item.Price</td>
+                <td>
+                    <img width="80" src="@config["ApiUrl"]/images/@item.ImageUrl" alt="@item.ProductName">
+                </td>
+                <td>@item.Unit</td>
+                <td>
+                    <a href="/product/edit/@item.ProductId">Edit</a>
+                    <a href="/product/delete/@item.ProductId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
