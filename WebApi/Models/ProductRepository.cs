@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Data;
 using Dapper;
 using Microsoft.AspNetCore.Identity;
@@ -22,5 +23,10 @@ public class ProductRepository : BaseRepository
     public IEnumerable<Product> GetProducts(int page, int size)
     {
         return connection.Query<Product>("GetProducts", new { Index = (page - 1) * size, Size = size }, commandType: CommandType.StoredProcedure);
+    }
+    public int Count()
+    {
+       int n=0;
+       return n;
     }
 }
