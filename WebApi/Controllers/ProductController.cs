@@ -17,5 +17,11 @@ namespace WebApi.Controllers
         {
             return Provider.Product.Add(obj);
         }
+        [HttpGet("{page}/{size}")]
+        [HttpGet("{page}")]
+        public IEnumerable<Product> GetProducts(int page, int size = 10)
+        {
+            return Provider.Product.GetProducts(page, size);
+        }
     }
 }
