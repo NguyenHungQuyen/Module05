@@ -75,4 +75,15 @@ AS
 INSERT INTO Product(CategoryId, ProductName, Description, Quantity, Price, ImageUrl, Unit) 
 VALUES (@CategoryId, @ProductName, @Description, @Quantity, @Price, @ImageUrl, @Unit);
 GO
+CREATE PROC GetProducts(
+    @Index INT,
+    @Size INT
+)
+AS
+BEGIN
+    SELECT * FROM Product
+    ORDER BY ProductId
+    OFFSET (@Index) ROWS FETCH NEXT (@Size) ROWS ONLY;
+END;
+GO
 
