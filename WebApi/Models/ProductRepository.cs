@@ -19,4 +19,8 @@ public class ProductRepository : BaseRepository
     {
        return connection.Execute("AddProduct", obj, commandType: CommandType.StoredProcedure);
     }
+    public IEnumerable<Product> GetProducts(int page, int size)
+    {
+        return connection.Query<Product>("GetProducts", new { Index = (page - 1) * size, Size = size }, commandType: CommandType.StoredProcedure);
+    }
 }
