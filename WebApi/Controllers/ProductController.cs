@@ -22,5 +22,10 @@ namespace WebApi.Controllers
         {
             return Provider.Product.GetProducts(page, size);
         }
+        [HttpGet("count")]
+        public int Count()
+        {
+            return Provider.Product.Count();
+        }
     }
 }
