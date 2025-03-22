@@ -26,7 +26,6 @@ public class ProductRepository : BaseRepository
     }
     public int Count()
     {
-       int n=0;
-       return n;
+       return 0;
     }
 }
