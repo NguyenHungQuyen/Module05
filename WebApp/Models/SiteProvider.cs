@@ -15,4 +15,8 @@ public class SiteProvider
     ProductRepository? product;
 
     public ProductRepository Product => product ??= new ProductRepository(configuration);
+
+    MemberRepository? member;
+
+    public MemberRepository Member=> member??=new MemberRepository(configuration);
 }
