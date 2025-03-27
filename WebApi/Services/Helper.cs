@@ -1,3 +1,6 @@
+using System.Security.Cryptography;
+using System.Text;
+
 namespace WebApi.Services;
 
     public static class Helper
@@ -56,6 +59,13 @@ namespace WebApi.Services;
         public static IEnumerable<string>? Upload(IFormFile[] af)
         {
             return Upload(af, Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images"));
+        }
+        public static byte[] Hash(string plaintext)
+        {
+            using (SHA256 algorithm = SHA256.Create())
+            {
+                return algorithm.ComputeHash(Encoding.ASCII.GetBytes(plaintext));
+            }
         }
 
     }
