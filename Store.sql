@@ -95,3 +95,19 @@ CREATE TABLE Member(
     LoginDate DATETIME NOT NULL DEFAULT GETDATE(),
     RegisterDate DATETIME NOT NULL DEFAULT GETDATE()
 );
+go
+CREATE PROCEDURE AddMember(
+    @MemberId VARCHAR(32),
+    @GivenName NVARCHAR(16),
+    @Surname NVARCHAR(16) = NULL,
+    @Email VARCHAR(64),
+    @Password BINARY(64)
+)
+AS
+BEGIN
+    IF NOT EXISTS (SELECT * FROM Member WHERE MemberId = @MemberId OR Email = @Email)
+    BEGIN
+        INSERT INTO Member (MemberId, GivenName, Surname, Email, Password)
+        VALUES (@MemberId, @GivenName, @Surname, @Email, @Password)
+    END
+END
