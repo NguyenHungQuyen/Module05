@@ -13,4 +13,7 @@ public class SiteProvider : BaseProvider
      ProductRepository? product;
 
     public ProductRepository Product => product ??= new ProductRepository(Connection);
+
+    MemberRepository member;
+    public MemberRepository Member => member??= new MemberRepository(Connection);
 }
