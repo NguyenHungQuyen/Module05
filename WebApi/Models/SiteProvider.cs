@@ -1,11 +1,7 @@
 namespace WebApi.Models;
 
-public class SiteProvider : BaseProvider
+public class SiteProvider(IConfiguration configuration) : BaseProvider(configuration)
 {
-    public SiteProvider(IConfiguration configuration) : base(configuration)
-    {
-    }
-
     CategoryRepository? category;
 
     public CategoryRepository Category => category ??= new CategoryRepository(Connection);
@@ -14,6 +10,6 @@ public class SiteProvider : BaseProvider
 
     public ProductRepository Product => product ??= new ProductRepository(Connection);
 
-    MemberRepository member;
+    MemberRepository? member;
     public MemberRepository Member => member??= new MemberRepository(Connection);
 }
