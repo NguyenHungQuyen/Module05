@@ -11,6 +11,10 @@ namespace WebApi.Models
         }
         public int Add(RegisterModel obj)
         {
+            if(string.IsNullOrEmpty(obj.MemberId)){
+                obj.MemberId = Guid.NewGuid().ToString().Replace("-", string.Empty);
+            }
+
             return connection.Execute("AddMember", new
             {
                 obj.MemberId,
