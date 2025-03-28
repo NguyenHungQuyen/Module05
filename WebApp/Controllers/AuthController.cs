@@ -10,7 +10,7 @@ public class AuthController:BaseController
         return View();
     }
     [HttpPost]
-    public async Task<IActionResult> Register(RegisterModel obj)
+    public IActionResult Register(RegisterModel obj)
     {
         return View();
     }
