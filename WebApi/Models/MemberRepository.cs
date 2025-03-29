@@ -24,9 +24,9 @@ namespace WebApi.Models
                 Password = Helper.Hash(obj.Password)
             }, commandType: CommandType.StoredProcedure);
         }
-        public Member? Login(LoginModel obj)
+        public int CheckMember(LoginModel obj)
         {
-            return null;
+            return 0;
         }
     }
 }
