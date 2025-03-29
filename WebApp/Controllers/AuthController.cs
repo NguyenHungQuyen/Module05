@@ -9,6 +9,10 @@ public class AuthController:BaseController
     {
         return View();
     }
+    public IActionResult Login()
+    {
+        return View();
+    }
     [HttpPost]
     public IActionResult Register(RegisterModel obj)
     {
