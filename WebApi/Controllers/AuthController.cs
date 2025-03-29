@@ -12,5 +12,13 @@ namespace WebApi.Controllers
         {
             return Provider.Member.Add(obj);
         }
+        [HttpPost("login")]
+        public string Login(LoginModel obj)
+        {
+            string token;
+            token="";
+            return token;
+        }
     }
+
 }
