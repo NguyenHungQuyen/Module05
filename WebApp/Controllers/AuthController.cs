@@ -12,6 +12,7 @@ public class AuthController:BaseController
     [HttpPost]
     public IActionResult Register(RegisterModel obj)
     {
+        Provider.Member.Add(obj);
         return View();
     }
 }
