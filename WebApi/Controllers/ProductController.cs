@@ -27,5 +27,13 @@ namespace WebApi.Controllers
         {
             return Provider.Product.Count();
         }
+         [HttpGet("all/{page}/{size?}")]
+        public object GetProductsAnd(int page, int size = 10)
+        {
+            return new {
+                Products=Provider.Product.GetProducts(page, size),
+                Count=Provider.Product.Count()
+            } ;
+        }
     }
 }
