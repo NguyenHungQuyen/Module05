@@ -32,10 +32,6 @@ namespace WebApi.Controllers
         {
             object kq;
             kq=new object();
-            kq=new {
-                Products=Provider.Product.GetProducts(page, size),
-                Count=Provider.Product.Count()
-            } ;
             return kq;
             
         }
