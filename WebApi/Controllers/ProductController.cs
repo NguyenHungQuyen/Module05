@@ -30,10 +30,14 @@ namespace WebApi.Controllers
          [HttpGet("all/{page}/{size?}")]
         public object GetProductsAnd(int page, int size = 10)
         {
-            return new {
+            object kq;
+            kq=new object();
+            kq=new {
                 Products=Provider.Product.GetProducts(page, size),
                 Count=Provider.Product.Count()
             } ;
+            return kq;
+            
         }
     }
 }
